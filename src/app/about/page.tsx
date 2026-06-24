@@ -10,69 +10,61 @@ export default function AboutPage() {
       <div className='mx-auto max-w-3xl'>
         {/* Header */}
         <div className='mb-12 text-center'>
-          <h1 className='text-foreground text-3xl font-bold tracking-tight sm:text-4xl'>About</h1>
-          <p className='text-muted-foreground mt-4 text-lg'>Learn more about this project</p>
+          <h1 className='text-foreground text-3xl font-bold tracking-tight sm:text-4xl'>
+            About Nova Analytics
+          </h1>
+          <p className='text-muted-foreground mt-4 text-lg'>Turn data into decisions.</p>
         </div>
 
         {/* Content Sections */}
         <div className='space-y-8'>
-          {/* Open Source Section */}
           <section className='bg-card rounded-2xl border p-8 shadow-sm'>
-            <h2 className='text-foreground mb-4 text-xl font-semibold'>Open-Source Project</h2>
+            <h2 className='text-foreground mb-4 text-xl font-semibold'>What Nova Analytics does</h2>
             <p className='text-muted-foreground text-lg leading-relaxed'>
-              This is an open-source Next.js admin dashboard starter built with modern web
-              technologies. It provides a solid foundation for building powerful admin interfaces
-              and dashboards. The source code is freely available for developers to use, modify, and
-              distribute.
+              Nova Analytics gives teams a clear, fast view of the metrics that matter — revenue,
+              active users, retention, and product events — in one dashboard. We turn raw data into
+              decisions, so you spend less time wrangling numbers and more time acting on them.
             </p>
           </section>
 
-          {/* Demo Purpose Section */}
           <section className='bg-card rounded-2xl border p-8 shadow-sm'>
-            <h2 className='text-foreground mb-4 text-xl font-semibold'>Demo Purpose</h2>
+            <h2 className='text-foreground mb-4 text-xl font-semibold'>Built for clarity</h2>
             <p className='text-muted-foreground text-lg leading-relaxed'>
-              This application serves as a demo for demonstration purposes. It showcases the
-              features, components, and capabilities of the admin dashboard starter. Feel free to
-              explore the interface, test the functionality, and evaluate if it meets your project
-              requirements.
+              A focused, legible interface that loads fast and works on any device. Every chart and
+              number earns its place — no clutter, no noise, just the signal you need.
             </p>
           </section>
 
-          {/* Auth Section */}
           <section className='bg-card rounded-2xl border p-8 shadow-sm'>
-            <h2 className='text-foreground mb-4 text-xl font-semibold'>Authentication by Clerk</h2>
+            <h2 className='text-foreground mb-4 text-xl font-semibold'>
+              Authentication by Supabase
+            </h2>
             <p className='text-muted-foreground text-lg leading-relaxed'>
-              Authentication for this application is securely handled by{' '}
+              Sign-in and account security are handled by{' '}
               <a
-                href='https://clerk.com'
+                href='https://supabase.com'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-primary font-medium hover:underline'
               >
-                Clerk
+                Supabase
               </a>
-              , a modern authentication and user management platform. Clerk provides secure sign-in,
-              session management, and user data protection out of the box.
+              , providing secure sessions and user management out of the box.
             </p>
           </section>
 
-          {/* Data Privacy Section */}
           <section className='bg-card rounded-2xl border p-8 shadow-sm'>
-            <h2 className='text-foreground mb-4 text-xl font-semibold'>Data Privacy</h2>
+            <h2 className='text-foreground mb-4 text-xl font-semibold'>Data privacy</h2>
             <p className='text-muted-foreground text-lg leading-relaxed'>
-              We take your privacy seriously. No personal data is misused, shared, or sold to third
-              parties. Any information collected during your use of this demo application is used
-              solely for the purpose of providing the demonstration experience and is handled in
-              accordance with best practices for data protection.
+              We take privacy seriously. Your data is never sold or shared with third parties, and
+              is used only to provide the Nova Analytics experience.
             </p>
           </section>
         </div>
 
         {/* Footer Note */}
         <div className='mt-12 text-center'>
-          <p className='text-muted-foreground text-sm'>
-            Built with Next.js, Tailwind CSS, and shadcn/ui
-          </p>
+          <p className='text-muted-foreground text-sm'>© Nova Analytics. Built with Next.js.</p>
         </div>
       </div>
     </div>

@@ -1,21 +1,27 @@
-# CLAUDE.md
+# CLAUDE.md — Nova Analytics
 
-This is a Next.js 16 + shadcn/ui admin dashboard starter kit.
+Nova Analytics is a Next.js 16 + Supabase + shadcn/ui white-label analytics dashboard (forked, rebranded, and migrated from Clerk to Supabase).
 
-## Key References
+## Stack & conventions
 
-- **[AGENTS.md](./AGENTS.md)** — Full project overview, tech stack, structure, conventions, data fetching patterns, deployment
-- **[docs/forms.md](./docs/forms.md)** — Form system: TanStack Form + Zod, composable fields, validation, multi-step, sheet/dialog forms
-- **[docs/themes.md](./docs/themes.md)** — Theme system: OKLCH colors, adding themes, font config
-- **[docs/nav-rbac.md](./docs/nav-rbac.md)** — Navigation RBAC: access control, Clerk integration
-- **[docs/clerk_setup.md](./docs/clerk_setup.md)** — Clerk auth setup: organizations, billing, environment variables
+- Next.js 16 App Router · React 19 · TypeScript · Tailwind 4 · shadcn/ui (Radix).
+- **Auth:** Supabase (`@supabase/ssr`). Clients in `src/lib/supabase/`. Session refresh + route guard in `src/proxy.ts` (Next 16's middleware file). Server actions in `src/features/auth/actions.ts`. Client user via `useSupabaseUser()` (`src/hooks/use-user.ts`).
+- **Data fetching:** TanStack React Query (server prefetch + `useSuspenseQuery`, `useMutation` for writes); URL state via `nuqs`.
+- **Icons:** import from `@/components/icons` only (never `@tabler/icons-react` directly).
+- **Forms:** `useAppForm` + `useFormFields<T>()` from `@/components/ui/tanstack-form`.
+- **Page headers:** use `PageContainer` props (`pageTitle`, `pageDescription`, `pageHeaderAction`).
+- **Formatting (oxfmt):** single quotes, JSX single quotes, no trailing comma, 2-space indent.
 
-## Critical Conventions
+## Theme / brand
 
-- **React Query** for all data fetching — `void prefetchQuery()` on server + `useSuspenseQuery` on client (standard TanStack pattern), `useMutation` for forms, `HydrationBoundary` + `dehydrate` for hydration, `<Suspense fallback>` for streaming
-- **API layer** per feature — `api/types.ts` → `api/service.ts` → `api/queries.ts`; queries use key factories (`entityKeys.all/list/detail`); components import from service and queries, never from mock APIs directly
-- **nuqs** for URL search params — `searchParamsCache` on server, `useQueryStates` on client, use `getSortingStateParser` for sort (same parser as `useDataTable`)
-- **Icons** — only import from `@/components/icons`, never from `@tabler/icons-react` directly
-- **Forms** — use `useAppForm` + `useFormFields<T>()` from `@/components/ui/tanstack-form`
-- **Page headers** — use `PageContainer` props (`pageTitle`, `pageDescription`, `pageHeaderAction`), never import `<Heading>` manually
-- **Formatting** — single quotes, JSX single quotes, no trailing comma, 2-space indent
+- Single theme **`nova`** (default) in `src/styles/themes/nova.css` — indigo→cyan on deep navy, OKLCH tokens, dark-first.
+- Strategy in `PRODUCT.md`, visual system in `DESIGN.md`. Front-end built/refined with the **impeccable** skill.
+- Do not reintroduce the original starter's branding in the UI. The gradient goes on the logo/surfaces, never on text.
+
+## Commands
+
+- `pnpm dev` · `pnpm build` · `pnpm seed` (seed demo user) · `pnpm lint` (oxlint) · `pnpm format` (oxfmt).
+
+## Definition of done
+
+`pnpm build` passes; the auth flow (sign-up → sign-in → protected dashboard → sign-out) works in incognito on the live URL; no original-brand references in visible UI; secrets only in env vars.

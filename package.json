@@ -1,20 +1,21 @@
 {
-  "name": "next-shadcn-dashboard-starter",
+  "name": "nova-analytics",
   "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "Kiran",
-    "url": "https://github.com/Kiranism"
+    "name": "Mauricio Vilar",
+    "url": "https://nyxaistudio.com"
   },
   "scripts": {
-    "dev": "node scripts/postinstall.js 2>/dev/null; next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "oxlint",
-    "lint:fix": "oxlint --fix && bun format",
+    "lint:fix": "oxlint --fix && pnpm format",
     "lint:strict": "oxlint --deny-warnings",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
+    "seed": "node --env-file=.env.local scripts/seed-user.mjs",
     "prepare": "husky"
   },
   "dependencies": {

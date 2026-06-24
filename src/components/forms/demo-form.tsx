@@ -307,7 +307,7 @@ export default function DemoForm() {
         <CardHeader>
           <CardTitle className='text-2xl font-bold'>All Form Inputs Demo</CardTitle>
           <p className='text-muted-foreground'>
-            Every possible form input — built with TanStack Form + shadcn/ui
+            Every possible form input — built with TanStack Form
           </p>
         </CardHeader>
         <CardContent>
