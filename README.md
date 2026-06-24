@@ -57,6 +57,8 @@ The demo user is created server-side via the Supabase Admin API with `email_conf
 - `src/features/auth/actions.ts` — server actions for sign-in / sign-up / sign-out.
 - `src/app/page.tsx` — public landing; `src/app/dashboard/*` — protected app.
 
+Full detail in [`docs/`](./docs/): [Architecture](./docs/ARCHITECTURE.md) · [Authentication](./docs/AUTHENTICATION.md) · [Database](./docs/DATABASE.md) · [Project structure](./docs/PROJECT-STRUCTURE.md).
+
 ## Design system
 
 Branded with the **impeccable** workflow: `PRODUCT.md` (strategy) + `DESIGN.md` (visual system) + a custom `nova` theme (indigo→cyan on deep navy, OKLCH tokens, dark-first) in `src/styles/themes/nova.css`.
