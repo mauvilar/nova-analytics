@@ -2,7 +2,7 @@
 
 > **Turn data into decisions.** A white-label data-analytics dashboard — built with Next.js, Supabase, and shadcn/ui, and shipped end-to-end with Claude Code.
 
-**Live demo:** **https://nova-analytics-six.vercel.app** · **Test login:** `admin@novaanalytics.io` / `NovaDemo2026!`
+**Live demo:** **https://nova.nyxaistudio.com** · **Test login:** `admin@novaanalytics.io` / `NovaDemo2026!`
 
 ---
 
@@ -46,7 +46,7 @@ Secrets live only in env vars (`.env*` is gitignored); production values are set
 
 - **Email:** `admin@novaanalytics.io`
 - **Password:** `NovaDemo2026!`
-- **Live URL:** https://nova-analytics-six.vercel.app
+- **Live URL:** https://nova.nyxaistudio.com (custom domain) · backup: https://nova-analytics-six.vercel.app
 
 The demo user is created server-side via the Supabase Admin API with `email_confirm: true`, so it needs no real inbox. Email confirmation is disabled for the demo so any new sign-up works instantly; **in production I would enable confirmation with a transactional email provider** (e.g. Resend/Postmark).
 
