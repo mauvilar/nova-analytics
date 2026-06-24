@@ -140,7 +140,7 @@ export const Icons = {
   // Brand
   github: IconBrandGithub,
   twitter: IconBrandTwitter,
-  logo: IconCommand,
+  logo: IconSparkles,
 
   // Communication
   chat: IconMessage,
