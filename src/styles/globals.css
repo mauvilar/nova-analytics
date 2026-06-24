@@ -75,3 +75,31 @@
   /* Apply the reveal animation */
   animation: reveal 0.4s ease-in-out forwards;
 }
+
+/* Nova landing — ambient, decorative motion. Content is fully visible without it. */
+@keyframes nova-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+@keyframes nova-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .nova-glow {
+    animation: nova-glow 7s ease-in-out infinite;
+  }
+  .nova-float {
+    animation: nova-float 8s ease-in-out infinite;
+  }
+}
