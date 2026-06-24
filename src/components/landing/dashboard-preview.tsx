@@ -70,8 +70,8 @@ export function DashboardPreview() {
                   y2='0'
                   gradientUnits='userSpaceOnUse'
                 >
-                  <stop stopColor='#6366F1' />
-                  <stop offset='1' stopColor='#22D3EE' />
+                  <stop stopColor='#D12128' />
+                  <stop offset='1' stopColor='#FAE3AC' />
                 </linearGradient>
                 <linearGradient
                   id='nova-fill'
@@ -81,8 +81,8 @@ export function DashboardPreview() {
                   y2='150'
                   gradientUnits='userSpaceOnUse'
                 >
-                  <stop stopColor='#6366F1' stopOpacity='0.35' />
-                  <stop offset='1' stopColor='#22D3EE' stopOpacity='0' />
+                  <stop stopColor='#D12128' stopOpacity='0.35' />
+                  <stop offset='1' stopColor='#FAE3AC' stopOpacity='0' />
                 </linearGradient>
               </defs>
               <path d={`${LINE} L400 150 L0 150 Z`} fill='url(#nova-fill)' />

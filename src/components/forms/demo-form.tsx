@@ -273,7 +273,7 @@ export default function DemoForm() {
       birthDate: undefined,
       dateRange: undefined,
       eventTime: '',
-      favoriteColor: '#6366f1',
+      favoriteColor: '#D12128',
       otp: '',
       formatting: [],
       tags: [],

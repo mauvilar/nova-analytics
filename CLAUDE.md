@@ -14,7 +14,7 @@ Nova Analytics is a Next.js 16 + Supabase + shadcn/ui white-label analytics dash
 
 ## Theme / brand
 
-- Single theme **`nova`** (default) in `src/styles/themes/nova.css` — indigo→cyan on deep navy, OKLCH tokens, dark-first.
+- Single theme **`nova`** (default) in `src/styles/themes/nova.css` — American-retro red · navy · cream on warm charcoal, OKLCH tokens, dark-first. Brand source of truth in `../assets/branding/`.
 - Strategy in `PRODUCT.md`, visual system in `DESIGN.md`. Front-end built/refined with the **impeccable** skill.
 - Do not reintroduce the original starter's branding in the UI. The gradient goes on the logo/surfaces, never on text.
 

@@ -8,8 +8,8 @@ function NovaMark({ className }: { className?: string }) {
     <svg viewBox='0 0 24 24' fill='none' className={className} aria-hidden='true'>
       <defs>
         <linearGradient id='nova-mark' x1='2' y1='2' x2='22' y2='22' gradientUnits='userSpaceOnUse'>
-          <stop stopColor='#6366F1' />
-          <stop offset='1' stopColor='#22D3EE' />
+          <stop stopColor='#D12128' />
+          <stop offset='1' stopColor='#FAE3AC' />
         </linearGradient>
       </defs>
       <path

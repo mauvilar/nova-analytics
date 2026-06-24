@@ -11,10 +11,10 @@ Operators at Nova Analytics' customers — ops managers, founders, growth/market
 Nova Analytics is a white-label data-analytics dashboard. It exists to "turn data into decisions": surface the metrics that matter in a fast, legible interface, gated by authentication so each customer sees their own workspace. Success = a user lands, signs in, and understands their numbers at a glance, then drills in without friction.
 
 ## Brand Personality
-Clear, confident, modern — never hypey. Three words: **lucid, sharp, trustworthy**. The product should feel like a well-engineered instrument. The name plays on *nova* (a new star): signal emerging out of noise, clarity appearing from data.
+Confident, warm, characterful — never hypey. Three words: **bold, warm, trustworthy**. The product should feel like a well-made instrument with a vintage soul. The name plays on *nova* (a new star): signal emerging out of noise, clarity appearing from data.
 
 ## Anti-references
-- SaaS-cream / warm-beige "AI default" backgrounds. Nova is cool, deep, technical.
+- *Accidental* palettes — generic "AI default" beige or stock corporate blue. Nova's American-retro warmth (red · navy · cream on charcoal) is a deliberate, committed choice, never a default.
 - Gradient text, decorative glassmorphism, neon overload.
 - The hero-metric template (giant number + tiny label + gradient) and endless identical icon-card grids.
 - Tiny uppercase tracked eyebrows above every section; 01 / 02 / 03 numbered scaffolding.
@@ -23,7 +23,7 @@ Clear, confident, modern — never hypey. Three words: **lucid, sharp, trustwort
 ## Design Principles
 1. **Clarity over decoration** — every element earns its place; data legibility comes first.
 2. **One cohesive instrument** — landing and app share the same tokens and feel like one product.
-3. **Cool, intentional color** — indigo→cyan brand on a deep navy base; color carries meaning (positive = emerald), not ornament.
+3. **Bold, intentional color** — American-retro red · navy · cream on a warm charcoal base; color carries meaning (positive = green, danger = crimson), not ornament.
 4. **Calm confidence** — restrained motion, generous spacing, no shouting.
 5. **Accessible by default** — contrast, focus states, and keyboard paths are non-negotiable.
 
