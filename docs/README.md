@@ -8,6 +8,7 @@ Structured documentation for the project. Start here.
 | [AUTHENTICATION.md](./AUTHENTICATION.md) | Supabase Auth (SSR): clients, proxy/middleware, server actions, session & cookie flow |
 | [DATABASE.md](./DATABASE.md) | `auth.users`, the `public.profiles` table, the auto-create trigger, and Row-Level Security |
 | [PROJECT-STRUCTURE.md](./PROJECT-STRUCTURE.md) | Annotated folder & file map of the repository |
+| [claude-code-process.md](./claude-code-process.md) | How this was built with Claude Code — plan-first, key decisions, verification |
 
 **Related (repo root):**
 - [`../README.md`](../README.md) — setup, stack, env vars, test credentials, live URL.
