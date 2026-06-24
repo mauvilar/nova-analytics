@@ -1,0 +1,7 @@
+# pnpm 11 reads settings from here. `allowBuilds` whitelists the native build
+# scripts so `pnpm install` runs them and exits 0 (locally and on Vercel/CI):
+#   - sharp        → Next.js image optimization
+#   - @sentry/cli  → source maps at build time
+allowBuilds:
+  sharp: true
+  '@sentry/cli': true
